@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap');
 
 *{
-    background: #E5E5E5;
+    margin: 0;
+    padding: 0;
     font-family: 'Inter', sans-serif;
-    font-size: 32px;
-    line-height: 150%;
+    background-color: #F3F5FC;
+
 }
 
 .logoAlura{
@@ -15,33 +16,40 @@
 
 main{
     display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.info{
+    margin-left: 240px;
+    font-size: 12px;
+    color: #495057;
 }
 
 .textArea{
+    margin-left: 240px;
+    margin-top: 10%;
     border: none;
     color: #0A3871;
-    margin-top: 168px;
-    margin-left: 240PX;
+    cursor: pointer;
     text-transform: lowercase;
-
 }
 
-::placeholder{ color: #0A3871;}
+::placeholder.textArea{ color: #0A3871;}
     .textArea:focus{
         outline: none;
     }
 
+
 .message{
+
     background: #FFFFFF;
     background-image: url(/img/person.png);
     background-repeat: no-repeat;
     border: none;
-    border-radius: 24px;
+    border-radius: 32px;
     border-color: #0A3871;
-    margin-top: 40px;
-    margin-left: 98px;
-    padding-left: 20px;
-    position: fixed;   
+
 }
 
 .message:focus{
@@ -51,11 +59,47 @@ main{
 .buttons{
     display: flex;
     margin-top: 18px;
+    margin-left: 240PX;
+    gap: 24px;
 }
 
 .btnEncrypt{
-    color: #FFFFFF;
+    color: #D8DFE8;
     background-color: #0A3871;
+    font-size: 16px;
     border-radius: 24px;
+    cursor: pointer;
     
+    padding: 24px;
+    gap: 8px;
+
+}
+
+
+.btnDecrypt{
+    color: #0A3871;
+    font-size: 16px;
+    background-color: #D8DFE8;
+    border-radius: 24px;
+    cursor: pointer;
+    
+   
+    padding: 24px;
+    gap: 8px;
+
+}
+
+.btnCopy{
+    color: #0A3871;
+    font-size: 16px;
+    background-color: #D8DFE8;
+    border-radius: 24px;
+    cursor: pointer;
+    align-items: center;
+    width: Fixed;
+    height: Hug;
+    padding: 24px;
+    gap: 8px;
+    position: absolute;
+
 }

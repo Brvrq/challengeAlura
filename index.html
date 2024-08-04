@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador - Challenge Alura</title>
     <link rel="stylesheet" href="/styles/style.css">
+    
 </head>
 <body>
     <header>
@@ -13,11 +14,12 @@
 
     <main>
         
-        <section>
+        <section class="sectionInput">
             <textarea class="textArea" cols="41" rows="10" placeholder="Digite seu texto!"></textarea>
     
             <div class="info">
-                <h6>Apenas em letras minúsculas</h6>
+                
+                 <h6> Apenas em letras minúsculas</h6>
             </div>
     
             <div class="buttons">
@@ -26,9 +28,13 @@
             </div>
         </section>
     
-        <section>
-            <textarea class="message" cols="20" rows="10"></textarea>
-            <button class="btnCopy">Copiar</button>
+        <section class="sectionResponse">
+            <div class="responseMessage">
+                <textarea class="message" cols="20" rows="10"></textarea>
+            </div>
+            <div class="responseButton">
+                <button class="btnCopy">Copiar</button>
+            </div>
         </section>
 
     </main>
