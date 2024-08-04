@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap');
+
+*{
+    background: #E5E5E5;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.logoAlura{
+    margin-top: 40px;
+    margin-left: 40px;
+    width: 2%;
+}
+
+main{
+    display: flex;
+}
+
+.textArea{
+    border: none;
+    color: #0A3871;
+    margin-top: 168px;
+    margin-left: 240PX;
+    text-transform: lowercase;
+
+}
+
+::placeholder{ color: #0A3871;}
+    .textArea:focus{
+        outline: none;
+    }
+
+.message{
+    background: #FFFFFF;
+    background-image: url(/img/person.png);
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    border-color: #0A3871;
+    margin-top: 40px;
+    margin-left: 98px;
+    padding-left: 20px;
+    position: fixed;   
+}
+
+.message:focus{
+    outline: none;
+}
+
+.buttons{
+    display: flex;
+    margin-top: 18px;
+}
+
+.btnEncrypt{
+    color: #FFFFFF;
+    background-color: #0A3871;
+    border-radius: 24px;
+    
+}
