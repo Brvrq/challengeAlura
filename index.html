@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptador - Challenge Alura</title>
+    <title>Text encrypt/decrypt - Challenge Alura</title>
     <link rel="stylesheet" href="/styles/style.css">
 
 </head>
@@ -17,15 +17,15 @@
     <main>
 
         <section class="encrypt">
-            <textarea class="textArea" cols="41" rows="10" placeholder="Digite seu texto!"></textarea>
+            <textarea name="textInput" class="textArea" cols="41" rows="10" placeholder="Digite seu texto!"></textarea>
             
             <div class="info">
-                <p> Somente letras minúsculas e sem acento.</p>
+                <img src="img/excl.png"> <p> Somente letras minúsculas e sem acento.</p>
             </div>
 
             <div class="buttons">
-                <button class="btnEncrypt" type="button" onclick="encrypt()">Encriptar</button>
-                <button class="btnDecrypt" type="button" onclick="descrypt()">Descriptar</button>
+                <button class="btnEncrypt" id="btnEncrypt" type="button" >Encriptar</button>
+                <button class="btnDecrypt" id="btnDecrypt" type="button" >Descriptar</button>
             </div>
 
         </section>
@@ -44,7 +44,7 @@
         </section>
 
     </main>
-    
+    <script src="scripts/script.js"></script>
 </body>
 
 
