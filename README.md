@@ -1,6 +1,6 @@
 # Challenge Alura - Encriptador / Descriptador de mensagens
 
-:construction:  Projeto em construção  :construction:
+
 
 # Projeto de formação "Iniciante em Programação" da Alura, que tem como objetivo:
 - `1`: Ao digitar na caixa de texto do lado esquerdo da tela, e clicar no botão "Criptografar", automáticamente será exibida na caixa de texto do lado direito a mensagem criptografada.
