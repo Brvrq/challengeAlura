@@ -4,102 +4,165 @@
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
-    background-color: #F3F5FC;
+    background-color: #f3f0f0;
 
 }
 
 .logoAlura{
-    margin-top: 40px;
-    margin-left: 40px;
-    width: 2%;
+    margin: 3%;
 }
 
-main{
+main {
     display: flex;
-    width: 100%;
-    justify-content: space-between;
+    justify-content: center;
+    height: auto;
+    width: 90%;
+    margin: auto;
 }
 
-.info{
-    margin-left: 240px;
-    font-size: 12px;
-    color: #495057;
+.encrypt{
+    width: 100%;
 }
 
 .textArea{
-    margin-left: 240px;
-    margin-top: 10%;
+    position: absolute;
+    width: 42%;
+    height: 60%;
+    left: 12%;
+    top: 15%;
     border: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
     color: #0A3871;
     cursor: pointer;
     text-transform: lowercase;
 }
 
-::placeholder.textArea{ color: #0A3871;}
-    .textArea:focus{
-        outline: none;
-    }
-
-
-.message{
-
-    background: #FFFFFF;
-    background-image: url(/img/person.png);
-    background-repeat: no-repeat;
-    border: none;
-    border-radius: 32px;
-    border-color: #0A3871;
-
+.textArea::placeholder{
+    font-family: 'Inter', sans-serif;
+    text-transform: none;
 }
 
-.message:focus{
+.textArea:focus{
     outline: none;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 2px;
+    position: absolute ;
+    width: 80%;
+    left: 12%;
+    top: 80%;
+}
+
+.info p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
 }
 
 .buttons{
     display: flex;
-    margin-top: 18px;
-    margin-left: 240PX;
-    gap: 24px;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0%;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 86%;
+    gap: 2%;
 }
 
+
 .btnEncrypt{
+    align-items: center;
+    justify-content: center;
     color: #D8DFE8;
     background-color: #0A3871;
     font-size: 16px;
     border-radius: 24px;
     cursor: pointer;
-    
-    padding: 24px;
+    padding: 2%;
+    width: 25%;
     gap: 8px;
-
 }
 
-
 .btnDecrypt{
+    justify-content: center;
+    align-items: center;
     color: #0A3871;
-    font-size: 16px;
     background-color: #D8DFE8;
+    font-size: 16px;
     border-radius: 24px;
     cursor: pointer;
-    
-   
-    padding: 24px;
+    padding: 2%;
+    width: 25%;
     gap: 8px;
+}
 
+.decrypt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    text-align: center;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    width: 30%;
+    height: 100%;
+    left: 60%;   
+    top: 5%;
+}
+
+figure personImg{
+    width: 100%;
+    margin-top: 35%;
+    padding-bottom: 4%;
+    object-fit: cover;
+}
+
+figcaption p{
+    text-align: center;
+}
+
+figcaption p:nth-child(1){
+    font-weight: bolder;
+}
+
+figcaption p:nth-child(2){
+    margin-bottom: 40px;
+}
+
+.output{
+    width: 90%;
+    height: 410px;
+    padding-bottom: 174px;
+    text-align: center;
+    color: #0a3871;
+    font-size: 2em;
+    font-family: 'Inter', sans-serif;
+    resize: none;
+    border: none;
+    outline: 0;
 }
 
 .btnCopy{
+    
+    justify-content: center;
+    align-items: center;
     color: #0A3871;
-    font-size: 16px;
     background-color: #D8DFE8;
+    font-size: 16px;
     border-radius: 24px;
     cursor: pointer;
-    align-items: center;
-    width: Fixed;
-    height: Hug;
-    padding: 24px;
+    padding: 2%;
+    width: 25%;
     gap: 8px;
-    position: absolute;
-
 }
